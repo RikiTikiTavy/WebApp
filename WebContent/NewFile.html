@@ -2,12 +2,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Good, Nice!</title>
+<title>Employees page</title>
 </head>
 <body>
 		<form method = "POST" action = "MyServlet">
-		Задорный<input type = "text" name = "firstName">
-		Огурец<input type = "text" name = "lastName">
+		<tr>
+			<td>Name</td>
+			<td><input type = "text" name = "firstName"></td>
+		</tr>
+		
+		<tr>
+			<td>LastName</td>
+			<td><input type = "text" name = "lastName"></td>
+		</tr>
+		Language<select name = "profession" size="1">
+		<option>Java
+		<option>Python
+		<option>PHP
+		</select>
+		
+		<input type = "radio" name = "genger" value="Y">Man</input>
+		<input type = "radio" name = "genger" value="N">Woman</input>
+		
 		<input type = "submit" value = "SendThisShit!">
 		</form>
 </body>

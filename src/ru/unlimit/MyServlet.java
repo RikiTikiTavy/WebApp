@@ -18,14 +18,14 @@ public class MyServlet extends HttpServlet {
 		
 		String name = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
-	
-		System.out.println(name);
-		System.out.println(lastName);
+		String language = request.getParameter("profession");
+		String gender = request.getParameter("Y");
 		
 		response.setContentType("text/html;charset = utf-8");
 		
 		PrintWriter out = response.getWriter();
-		out.println("<h3>Hello from MyServlet.POST" + name +  " " + lastName+ "</h3>");
+		out.println("<h3>Welcome to our company, " + name +  " " + lastName+ "!</h3>");
+		out.println("<h3>You will work here like a " + language +  " slave" +"</h3>");
 		out.close();
 	}
 
